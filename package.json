@@ -1,0 +1,22 @@
+{
+  "name": "b4",
+  "version": "1.0.0",
+  "description": "The MEAN Business Directory",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "ARISTOFANIS CHIONIS",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.0.10"
+  }
+}
