@@ -22,11 +22,12 @@ module.exports.reviewsGetAll = function(req,res){
 				response.message = {"message" : "Business ID not found " + businessID};
 			}else{
 				response.message = doc.reviews ? doc.reviews : [];
+				console.log("Found Business " + businessID);
+				res
+					.status(200)
+					.json(doc.reviews);
 			}
-			console.log("Found Business " + businessID);
-			res
-				.status(200)
-				.json(doc.reviews);
+			
 		});	
 };
 
