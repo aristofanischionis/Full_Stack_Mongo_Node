@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var dbURL = 'mongodb://localhost:27017/businessDB';
+var dbURL = 'mongodb://localhost:27017/Profiles';
 
 var connection = mongoose.connect(dbURL);
 
@@ -18,4 +18,4 @@ mongoose.connection.on('error', function(){
 module.exports.get = function(){
    return connection;
 };
-require('./business.model.js');
+require('./Profile.model.js');

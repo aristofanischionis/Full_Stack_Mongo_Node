@@ -1,7 +1,7 @@
 {
-  "name": "b4",
+  "name": "Profile Place",
   "version": "1.0.0",
-  "description": "The MEAN Business Directory",
+  "description": "Profile Place",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -13,8 +13,12 @@
   "author": "ARISTOFANIS CHIONIS",
   "license": "ISC",
   "dependencies": {
+    "Faker": "^0.7.2",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "fs": "0.0.1-security",
+    "jsonfile": "^4.0.0",
     "mongo": "^0.1.0",
     "mongodb": "^3.0.4",
     "mongoose": "^5.0.10"
