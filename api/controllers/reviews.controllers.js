@@ -22,6 +22,7 @@ module.exports.reviewsGetAll = function (req, res) {
                 response.message = {"message": "Profile ID not found " + ProfileID};
             } else {
                 response.message = doc.reviews ? doc.reviews : [];
+                doc.reviews.sort({ "votes.endorsed_by" :-1});
                 console.log("Found Profile " + ProfileID);
                 res
                     .status(200)
