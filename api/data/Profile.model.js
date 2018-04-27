@@ -10,7 +10,6 @@ var votesSchema = new Schema ({
 
 var reviewSchema = new Schema ({
     username : String,
-    votes : votesSchema,
     text : String,
     stars : Number,
     date :{
@@ -57,10 +56,11 @@ var ProfcardSchema = new Schema({
 });
 
 var ProfileSchema = new Schema({
-    ProfileCard : [ProfcardSchema],
+    ProfileCard : ProfcardSchema,
     Skills : String,
     Finance : String,
-    reviews : [reviewSchema]
+    reviews : [reviewSchema],
+    votes : votesSchema
 });
 
-mongoose.model('Profile', ProfileSchema, 'Profiles');
+mongoose.model('Profile', ProfileSchema, 'Profile');
